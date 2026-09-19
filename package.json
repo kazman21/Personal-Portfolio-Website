@@ -1,0 +1,14 @@
+{
+    "name": "mk-portfolio",
+    "version": "1.0.0",
+    "description": "Munaf Kazi Portfolio Website",
+    "main": "index.html",
+    "scripts": {
+      "dev": "npx serve -p 3000 .",
+      "deploy": "npx vercel --prod"
+    },
+    "dependencies": {},
+    "devDependencies": {
+      "vercel": "^33.0.0"
+    }
+  }

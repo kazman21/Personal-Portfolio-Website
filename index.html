@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Munaf Kazi - Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <main id="main">
+
+        <!-- ============================================
+             ABOUT (Hero) - visible on all viewports
+             ============================================ -->
+        <section id="about" class="hero">
+            <!-- Background Video -->
+            <video class="background-video" autoplay muted loop playsinline aria-hidden="true">
+                <source src="images/live_background.mp4" type="video/mp4">
+            </video>
+
+            <!-- Fallback background image (shown if video fails to load) -->
+            <div class="background-overlay"></div>
+
+            <!-- Main Content Container -->
+            <div class="container">
+                <!-- Profile Image - Center (Desktop) -->
+                <div class="profile-image-container">
+                    <img src="images/munaf_img.png" alt="Portrait of Munaf Kazi" class="profile-image" width="320" height="320" decoding="async">
+                </div>
+
+                <!-- MOBILE HEADER + NAV (visible only on mobile) -->
+                <header class="mobile-header">
+                    <div class="mobile-header-names">
+                        <h1 class="heading-munaf" id="headingMunafMobile">
+                            <span class="typing-text"></span>
+                        </h1>
+                        <h2 class="heading-kazi" id="headingKaziMobile">
+                            <span class="typing-text"></span>
+                        </h2>
+                    </div>
+
+                    <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-toggle">
+                    <label for="mobile-menu-toggle" class="mobile-hamburger" aria-label="Toggle navigation menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+
+                    <nav class="mobile-menu" aria-label="Mobile navigation">
+                        <ul>
+                            <li><a href="#about">About Me</a></li>
+                            <li><a href="#cv">CV</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#modules">Modules</a></li>
+                        </ul>
+                    </nav>
+                </header>
+
+                <!-- Left Side - Dark Background Area -->
+                <div class="left-section">
+                    <h1 class="heading-munaf" id="headingMunaf">
+                        <span class="typing-text"></span>
+                    </h1>
+
+                    <nav class="main-nav" aria-label="Primary navigation">
+                        <a href="cv.html" class="nav-link">CV</a>
+                        <span class="nav-divider">|</span>
+                        <a href="projects.html" class="nav-link projects-link">
+                            <span class="projects-white">PROJ</span><span class="projects-black">ECTS</span>
+                        </a>
+                        <span class="nav-divider">|</span>
+                        <a href="contact.html" class="nav-link">CONTACT</a>
+                        <span class="nav-divider">|</span>
+                        <a href="modules.html" class="nav-link">MODULES</a>
+                    </nav>
+
+                    <p class="about-text">
+                        Hello there! I'm Munaf Kazi, a 19 year old second-year Software Development student at TUS (US820). I'm passionate about gaming, STEM, and automotive projects, and I love turning ideas into real, practical solutions using C++, C#, SQL, and web development. I've completed certifications like JLR: Into the Future, Docker, and Postman, and I'm always learning new skills. When I'm not coding, you'll find me on the football pitch or at the gym, staying active and focused. Take a look through my portfolio to learn more about me!
+                    </p>
+                </div>
+
+                <!-- Right Side - Light Background Area -->
+                <div class="right-section">
+                    <div class="portfolio-info">
+                        <div class="portfolio-info-text">
+                            <p class="date" id="currentDate"></p>
+                            <h2 class="portfolio-title">Personal Portfolio</h2>
+                            <p class="portfolio-subtitle">Software Developer | TUS</p>
+                        </div>
+
+                        <div class="profile-image-container mobile-profile">
+                            <img src="images/munaf_img.png" alt="Portrait of Munaf Kazi" class="profile-image" width="320" height="320" decoding="async">
+                        </div>
+                    </div>
+
+                    <h2 class="heading-kazi" id="headingKazi">
+                        <span class="typing-text"></span>
+                    </h2>
+
+                    <div class="social-icons">
+                        <a href="https://github.com/kazman21" class="social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                            <img src="images/github.png" alt="" class="social-icon" width="40" height="40" loading="lazy" decoding="async">
+                        </a>
+                        <a href="https://www.linkedin.com/in/munafkazi" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                            <img src="images/linkedn.png" alt="" class="social-icon" width="40" height="40" loading="lazy" decoding="async">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             CV - mobile only
+             ============================================ -->
+        <section id="cv" class="mobile-only-section mobile-cv">
+            <h2 class="mobile-section-title">CV</h2>
+            <p class="mobile-section-subtitle">Software Development &middot; TUS</p>
+
+            <div class="mobile-cv-block">
+                <h3 class="mobile-block-title">Contact</h3>
+                <p class="mobile-cv-contact">K00323333@student.tus.ie<br>(+353) 89 421 8115<br>Ennis, Co. Clare</p>
+            </div>
+
+            <div class="mobile-cv-block">
+                <h3 class="mobile-block-title">Profile</h3>
+                <p>Third-year Software Development student (BSc Hons) at TUS with practical experience creating software solutions through collaborative projects. Passionate about coding and emerging technologies, with a proven ability to design user-centric applications. Ready to contribute to a Software Development Internship or Placement.</p>
+            </div>
+
+            <div class="mobile-cv-block">
+                <h3 class="mobile-block-title">Skills</h3>
+                <p>C++ &middot; C# &middot; JavaScript &middot; SQL &middot; HTML &amp; CSS &middot; Git &amp; GitHub &middot; .NET</p>
+            </div>
+
+            <div class="mobile-cv-block">
+                <h3 class="mobile-block-title">Education</h3>
+                <p>BSc (Hons) Software Development<br>TUS &middot; Sep 2024 - Oct 2028</p>
+            </div>
+
+            <div class="mobile-cv-actions">
+                <a href="KAZI_MUNAF.pdf" download="KAZI_MUNAF.pdf" class="mobile-download-btn">
+                    Download CV
+                </a>
+                <a href="cv.html" class="mobile-section-link">View full CV</a>
+            </div>
+        </section>
+
+        <!-- ============================================
+             PROJECTS - mobile only
+             ============================================ -->
+        <section id="projects" class="mobile-only-section mobile-projects">
+            <h2 class="mobile-section-title">Projects</h2>
+            <p class="mobile-section-subtitle">What I've built &amp; achieved</p>
+
+            <article class="mobile-project-card">
+                <h3>Personal Portfolio Website</h3>
+                <p>Built this multi-page portfolio from scratch. Video background, typing animation, and a working contact form. Deployed on Vercel.</p>
+                <p class="mobile-tech">HTML &middot; CSS &middot; JavaScript &middot; Vercel</p>
+            </article>
+
+            <article class="mobile-project-card">
+                <h3>Shopping System - Team Project</h3>
+                <p>Collaborated with a team of four to design and build a structured shopping system as a university group project.</p>
+                <p class="mobile-tech">C# &middot; Jan - Mar 2025</p>
+            </article>
+
+            <article class="mobile-project-card">
+                <h3>Responsive Web Development</h3>
+                <p>Designed and built responsive, accessible web pages with wireframes in Figma and accessibility validated using WAVE.</p>
+                <p class="mobile-tech">Figma &middot; HTML &middot; CSS &middot; JavaScript &middot; WAVE</p>
+            </article>
+
+            <article class="mobile-project-card">
+                <h3>JLR: Into the Future - Virtual Work Experience</h3>
+                <p>10-hour Jaguar Land Rover programme covering employability, teamwork, and professional communication. Produced an industry report.</p>
+                <p class="mobile-tech">Aug 2025 &middot; 10 hours</p>
+            </article>
+
+            <article class="mobile-project-card">
+                <h3>IBM Quantum Computing</h3>
+                <p>Completed IBM's Quantum Computing course covering qubits, superposition, and quantum circuits.</p>
+                <p class="mobile-tech">Issued by: IBM</p>
+            </article>
+
+            <article class="mobile-project-card">
+                <h3>Palo Alto Networks Certification</h3>
+                <p>Covered core cybersecurity principles: network security, threat detection, and modern security architecture.</p>
+                <p class="mobile-tech">Issued by: Palo Alto Networks</p>
+            </article>
+
+            <a href="projects.html" class="mobile-section-link">View full Projects page</a>
+        </section>
+
+        <!-- ============================================
+             CONTACT - mobile only
+             ============================================ -->
+        <section id="contact" class="mobile-only-section mobile-contact">
+            <h2 class="mobile-section-title">Contact</h2>
+            <p class="mobile-section-subtitle">Get in touch</p>
+
+            <ul class="mobile-contact-list">
+                <li>
+                    <span class="mobile-contact-label">Email</span>
+                    <a href="mailto:munafkazi2006@gmail.com">munafkazi2006@gmail.com</a>
+                </li>
+                <li>
+                    <span class="mobile-contact-label">Phone</span>
+                    <a href="tel:+353894218115">(+353) 89 421 8115</a>
+                </li>
+                <li>
+                    <span class="mobile-contact-label">Location</span>
+                    <span>Ennis, Co. Clare, Ireland</span>
+                </li>
+            </ul>
+
+            <div class="mobile-contact-socials">
+                <a href="https://github.com/kazman21" class="social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                    <img src="images/github.png" alt="" class="social-icon" width="40" height="40" loading="lazy" decoding="async">
+                </a>
+                <a href="https://www.linkedin.com/in/munafkazi" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                    <img src="images/linkedn.png" alt="" class="social-icon" width="40" height="40" loading="lazy" decoding="async">
+                </a>
+            </div>
+
+            <a href="contact.html" class="mobile-section-link">Open full contact form</a>
+        </section>
+
+        <!-- ============================================
+             MODULES - mobile only
+             ============================================ -->
+        <section id="modules" class="mobile-only-section mobile-modules">
+            <h2 class="mobile-section-title">Modules</h2>
+            <p class="mobile-section-subtitle">Software Development (US820)</p>
+
+            <div class="mobile-modules-group">
+                <h3 class="mobile-block-title">Year 1 - Core Foundations</h3>
+                <ul class="mobile-modules-list">
+                    <li>Introduction to Programming <span class="mobile-tech-inline">(C++)</span></li>
+                    <li>Object-Oriented Programming <span class="mobile-tech-inline">(C++)</span></li>
+                    <li>Structured Programming <span class="mobile-tech-inline">(C++)</span></li>
+                    <li>Responsive Web Development <span class="mobile-tech-inline">(HTML, CSS, JS)</span></li>
+                    <li>SQL Essentials <span class="mobile-tech-inline">(SQL, Excel)</span></li>
+                    <li>Operating Systems Fundamentals <span class="mobile-tech-inline">(Linux)</span></li>
+                </ul>
+            </div>
+
+            <div class="mobile-modules-group">
+                <h3 class="mobile-block-title">Year 2 - Applied Development &amp; Systems</h3>
+                <ul class="mobile-modules-list">
+                    <li>Data Design &amp; Programming <span class="mobile-tech-inline">(MariaDB, XAMPP)</span></li>
+                    <li>Discrete Mathematics <span class="mobile-tech-inline">(C#)</span></li>
+                    <li>Data Structures &amp; Algorithms <span class="mobile-tech-inline">(C++)</span></li>
+                    <li>Networking Fundamentals <span class="mobile-tech-inline">(Cisco, Wireshark)</span></li>
+                    <li>Object-Oriented Theory &amp; Programming <span class="mobile-tech-inline">(C#)</span></li>
+                    <li>Software Development <span class="mobile-tech-inline">(Visual Paradigm, UML)</span></li>
+                </ul>
+            </div>
+
+            <a href="modules.html" class="mobile-section-link">View full Modules page</a>
+        </section>
+
+    </main>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

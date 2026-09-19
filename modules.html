@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Munaf Kazi - Modules</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="modules.css">
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <!-- MOBILE HEADER -->
+    <header class="mobile-header">
+        <span class="mobile-name">MUNAF KAZI</span>
+
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger" aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <!-- FULLSCREEN MOBILE MENU -->
+        <nav class="mobile-menu" aria-label="Mobile navigation">
+            <ul>
+                <li><a href="index.html#about">About Me</a></li>
+                <li><a href="index.html#cv">CV</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="index.html#modules" class="active-mobile">Modules</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN SECTION -->
+    <main id="main" class="modules-hero">
+
+        <!-- Background Video -->
+        <video class="background-video" autoplay muted loop playsinline aria-hidden="true">
+            <source src="images/live_background.mp4" type="video/mp4">
+        </video>
+
+        <!-- Fallback background image -->
+        <div class="background-overlay"></div>
+
+        <!-- DESKTOP NAV -->
+        <nav class="modules-nav" aria-label="Primary navigation">
+            <a href="index.html" class="nav-link">ABOUT ME</a>
+            <span class="nav-divider">|</span>
+            <a href="cv.html" class="nav-link">CV</a>
+            <span class="nav-divider">|</span>
+            <a href="projects.html" class="nav-link projects-link">
+                <span class="projects-white">PROJ</span><span class="projects-black">ECTS</span>
+            </a>
+            <span class="nav-divider">|</span>
+            <a href="contact.html" class="nav-link">CONTACT</a>
+            <span class="nav-divider">|</span>
+            <a href="modules.html" class="nav-link modules-active">MODULES</a>
+        </nav>
+
+        <!-- PAGE TITLE -->
+        <div class="modules-title-container">
+            <h1 class="modules-title">MY MODULES</h1>
+            <p class="modules-subtitle">Software Development (US820)</p>
+        </div>
+
+        <!-- MODULES GRID -->
+        <div class="modules-grid">
+
+            <!-- YEAR 1 -->
+            <h2 class="year-header">YEAR 1 - CORE FOUNDATIONS</h2>
+
+            <div class="module-card">
+                <h3 class="module-title">Introduction to Programming</h3>
+                <p class="module-desc">
+                    I developed strong programming fundamentals, focusing on logical thinking, problem-solving, and writing clear, structured code that forms the basis of all my development work. I applied C++ to implement algorithms and practice structured programming techniques, strengthening my problem-solving skills.
+                </p>
+                <p class="module-tech">Tech stack: C++</p>
+            </div>
+
+            <div class="module-card">
+                <h3 class="module-title">Introduction to Object-Oriented Programming</h3>
+                <p class="module-desc">
+                    This module introduced me to object-oriented principles such as classes, objects, and encapsulation, helping me design modular and maintainable software. I used C++ to create classes and objects, experimenting with inheritance and encapsulation to build reusable, structured code.
+                </p>
+                <p class="module-tech">Tech stack: C++</p>
+            </div>
+
+            <div class="module-card">
+                <h3 class="module-title">Structured Programming</h3>
+                <p class="module-desc">
+                    I strengthened my understanding of structured programming techniques, including loops, functions, and control flow, improving the reliability and readability of my code. I implemented these techniques in C++, creating structured programs that reinforced coding best practices.
+                </p>
+                <p class="module-tech">Tech stack: C++</p>
+            </div>
+
+            <div class="module-card">
+                <h3 class="module-title">Responsive Design and Web Development</h3>
+                <p class="module-desc">
+                    I learned how to design and build responsive, accessible websites that adapt to different devices, combining usability, accessibility standards, and modern front-end practices. I designed layouts and wireframes using Figma, built web pages with HTML, CSS, and JavaScript, selected typography with Google Fonts, and tested accessibility using the WAVE Accessibility Tool.
+                </p>
+                <p class="module-tech">Tech stack: Figma, HTML, CSS, JavaScript, Google Fonts, WAVE Accessibility Tool</p>
+            </div>
+
+            <div class="module-card">
+                <h3 class="module-title">Structured Query Language (SQL) Essentials</h3>
+                <p class="module-desc">
+                    This module taught me how to design and query relational databases efficiently, enabling me to manage and retrieve data in real-world applications. I wrote queries and managed databases using SQL, and analysed and visualised results with Microsoft Excel to gain insights from the data.
+                </p>
+                <p class="module-tech">Tech stack: SQL, Microsoft Excel</p>
+            </div>
+
+            <div class="module-card">
+                <h3 class="module-title">Operating Systems Fundamentals</h3>
+                <p class="module-desc">
+                    I gained insight into how operating systems manage processes, memory, and file systems, giving me a deeper understanding of how software runs at a system level. I explored Ubuntu (Linux), using the command line to manage files, processes, and system operations.
+                </p>
+                <p class="module-tech">Tech stack: Ubuntu (Linux)</p>
+            </div>
+
+            <!-- YEAR 2 -->
+            <h2 class="year-header">YEAR 2 - APPLIED DEVELOPMENT & SYSTEMS</h2>
+
+            <div class="module-card">
+                <h3 class="module-title">Data Design and Programming</h3>
+                <p class="module-desc">
+                    I expanded my database skills by combining data modelling with programming techniques, allowing me to design and build well-structured, data-driven applications. I implemented databases in MariaDB (SQL), tested and hosted applications using XAMPP, modelled data with MySQL Workbench, including EER diagrams, and documented my designs using Microsoft Word and PowerPoint.
+                </p>
+                <p class="module-tech">Tech stack: MariaDB (SQL), XAMPP, MySQL Workbench, Microsoft Word, PowerPoint</p>
+            </div>
+
+            <div class="module-card">
+                <h3 class="module-title">Discrete Mathematics</h3>
+                <p class="module-desc">
+                    This module strengthened my logical and analytical thinking through topics such as sets, relations, and formal logic, which are essential for understanding algorithms and computation. I applied these concepts to develop a menu-driven application using C#, while using Microsoft Excel to organise and calculate relevant data.
+                </p>
+                <p class="module-tech">Tech stack: Microsoft Excel, C#</p>
+            </div>
+
+            <div class="module-card">
+                <h3 class="module-title">Fundamentals of Data Structures & Algorithms</h3>
+                <p class="module-desc">
+                    I developed a strong understanding of core data structures and algorithms, enabling me to write more efficient, scalable, and performance-focused code. I implemented arrays, linked lists, and trees in C++ to solve computational problems and improve program efficiency.
+                </p>
+                <p class="module-tech">Tech stack: C++</p>
+            </div>
+
+            <div class="module-card">
+                <h3 class="module-title">Networking Fundamentals</h3>
+                <p class="module-desc">
+                    I gained a foundational understanding of how computer networks operate, including how data is transmitted between systems and across the internet. I simulated networks using Cisco Packet Tracer and analysed traffic with Wireshark to understand protocols and data flow.
+                </p>
+                <p class="module-tech">Tech stack: Cisco Packet Tracer, Wireshark</p>
+            </div>
+
+            <div class="module-card">
+                <h3 class="module-title">Object-Oriented Theory and Programming</h3>
+                <p class="module-desc">
+                    I advanced my object-oriented programming skills, focusing on software design principles, abstraction, and building more complex, maintainable systems. I applied C# to develop object-oriented applications, practising abstraction, inheritance, and modular design.
+                </p>
+                <p class="module-tech">Tech stack: C#</p>
+            </div>
+
+            <div class="module-card">
+                <h3 class="module-title">Software Development</h3>
+                <p class="module-desc">
+                    This module introduced me to the software development lifecycle and UML modelling, helping me approach software problems in a structured and professional way. I created UML diagrams in Visual Paradigm to model systems and documented my development process using Microsoft Word.
+                </p>
+                <p class="module-tech">Tech stack: Visual Paradigm, Microsoft Word</p>
+            </div>
+
+        </div>
+    </main>
+
+    <script>
+        const video = document.querySelector('.background-video');
+        const fallback = document.querySelector('.background-overlay');
+
+        if (video && fallback) {
+            video.addEventListener('error', () => fallback.style.display = 'block');
+            video.addEventListener('loadeddata', () => fallback.style.display = 'none');
+        }
+    </script>
+
+</body>
+</html>

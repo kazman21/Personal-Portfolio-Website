@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Munaf Kazi - Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <main id="main" class="contact-hero">
+        <video class="background-video" autoplay muted loop playsinline aria-hidden="true">
+            <source src="images/live_background.mp4" type="video/mp4">
+        </video>
+        <div class="background-overlay"></div>
+
+        <nav class="contact-nav" aria-label="Primary navigation">
+            <a href="index.html" class="nav-link">ABOUT ME</a>
+            <span class="nav-divider">|</span>
+            <a href="cv.html" class="nav-link">CV</a>
+            <span class="nav-divider">|</span>
+            <a href="projects.html" class="nav-link projects-link">
+                <span class="projects-white">PROJ</span><span class="projects-black">ECTS</span>
+            </a>
+            <span class="nav-divider">|</span>
+            <a href="contact.html" class="nav-link contact-active">CONTACT</a>
+            <span class="nav-divider">|</span>
+            <a href="modules.html" class="nav-link">MODULES</a>
+        </nav>
+        
+        <div class="contact-container">
+            <div class="contact-left-column">
+                <div class="contact-info-section">
+                    <h1 class="contact-title">GET IN TOUCH</h1>
+                    <p class="contact-description">
+                        I'd love to hear from you! Whether you have a question, want to discuss a project, or just want to connect, feel free to reach out using the form or contact details below.
+                    </p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-detail-item">
+                            <h3 class="contact-detail-title">Email</h3>
+                            <a href="mailto:munafkazi2006@gmail.com" class="contact-detail-link">munafkazi2006@gmail.com</a>
+                        </div>
+                        
+                        <div class="contact-detail-item">
+                            <h3 class="contact-detail-title">Phone</h3>
+                            <a href="tel:+353894218115" class="contact-detail-link">(+353) 89 421 8115</a>
+                        </div>
+                        
+                        <div class="contact-detail-item">
+                            <h3 class="contact-detail-title">Location</h3>
+                            <p class="contact-detail-text">Ennis, Co. Clare, Ireland</p>
+                        </div>
+                        
+                        <div class="contact-detail-item">
+                            <h3 class="contact-detail-title">Social Media</h3>
+                            <div class="social-links">
+                                <a href="https://github.com/kazman21" class="social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                                    <img src="images/github.png" alt="" class="social-icon" width="40" height="40" loading="lazy" decoding="async">
+                                </a>
+                                <a href="https://www.linkedin.com/in/munafkazi" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                                    <img src="images/linkedn.png" alt="" class="social-icon" width="40" height="40" loading="lazy" decoding="async">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-right-column">
+                <div class="contact-form-section">
+                    <h2 class="form-title">Send Me a Message</h2>
+                    
+                    <div class="success-message" id="successMessage" role="alert" tabindex="-1">
+                        <div class="success-icon">✓</div>
+                        <h3 class="success-title">Message Sent Successfully!</h3>
+                        <p class="success-text">Thank you for reaching out. I'll get back to you as soon as possible.</p>
+                    </div>
+                    
+                    <div class="error-message" id="errorMessage" role="alert" tabindex="-1">
+                        <div class="error-icon">✗</div>
+                        <h3 class="error-title">Oops! Something went wrong.</h3>
+                        <p class="error-text" id="errorText">Please try again later.</p>
+                    </div>
+                    
+                    <form class="contact-form" id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="fullName" class="form-label">Full Name <span class="required">*</span></label>
+                            <input type="text" id="fullName" name="fullName" class="form-input" placeholder="John Doe" required maxlength="100" autocomplete="name">
+                            <span class="form-error" id="nameError" role="alert"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="john.doe@example.com" required maxlength="100" autocomplete="email">
+                            <span class="form-error" id="emailError" role="alert"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message <span class="required">*</span></label>
+                            <textarea id="message" name="message" class="form-textarea" placeholder="Write your message here..." rows="6" required maxlength="1000"></textarea>
+                            <span class="form-error" id="messageError" role="alert"></span>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn" id="submitBtn">
+                            <span class="submit-text" id="submitText">Send Message</span>
+                            <span class="submit-loader" id="submitLoader"></span>
+                        </button>
+                        
+                        <p class="rate-limit-notice">Please wait between messages - limited to 3 submissions per minute.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="contact.js"></script>
+</body>
+</html>
