@@ -301,6 +301,27 @@ body {
     font-style: italic;
 }
 
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    width: fit-content;
+    margin-top: 0.4rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 1px;
+    transition: color 0.25s ease, border-color 0.25s ease;
+}
+
+.project-link:hover,
+.project-link:focus-visible {
+    color: #ffffff;
+    border-bottom-color: #ffffff;
+}
+
 /* ============================================
    MOBILE HEADER + MENU
 ============================================ */
